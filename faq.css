@@ -1,0 +1,147 @@
+*{
+    margin:0;
+    padding:0;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    box-sizing:border-box;
+}
+body{
+    background:url(wss_project/purple_back.png) no-repeat;
+    height:110vh;
+    background-size: cover;
+    background-position:center;
+}
+header{
+    width:100%;
+    height: 75px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 30px 1%;
+    background: rgba(0, 0, 0,0.2);
+}
+.logo{
+    font-size:30px;
+    font-weight: bold;
+    color:#FFF;
+    letter-spacing:1.5px ;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    margin-right: 5px;
+}
+nav:after{
+    content: '';
+    display: block;
+    clear:both;
+}
+.links li{
+    display: inline-block;
+    list-style: none;
+    padding: 0px 20px; 
+    position:relative;
+    cursor: pointer;
+}
+.links li a{
+    display: inline-block;
+    color: #FFF;
+    padding: 20px;
+    text-decoration: none;
+}
+a,button{
+    font-size:16px;
+    font-weight: 500;
+    color: #ffffff;
+    text-decoration: none;
+    cursor: pointer;
+}
+button{
+    background: rgba(0, 0, 0,0.2);
+    border: 1.5px solid #1c082592;
+    border-radius:50px;
+    padding: 9px 25px;
+}
+button:hover{
+    background-color: #5f009e48;
+    transition: all 0.2s ease 0s;
+}
+.links li a:hover{
+    color: #d2005e;
+    transition:all 0.3s ease 0s; 
+}
+.links li:hover{
+    background: #00000035;
+}
+
+ul li:hover ul.dropdown_menu{
+    display: block;
+}
+ul li ul.dropdown_menu{
+    display: none;
+    z-index: 999;
+    position:absolute;
+    width: auto;
+    top: 60px;
+    left: 0px;
+    background: #4a4545c7;
+}
+.dropdown_menu li{
+    border: 1px solid #222;
+    display: block;
+}
+ul li:hover ul.dropdown_menu1{
+    display: block;
+}
+ul li ul.dropdown_menu1{
+    display: none;
+    z-index: 999;
+    position:absolute;
+    width: auto;
+    top: 60px;
+    left: 0px;
+    background: #4a4545c7;
+}
+.dropdown_menu1 li{
+    border: 1px solid #222;
+    display: block;
+}
+h2 {
+    font-size: 3.2em;
+    border-bottom: 1px solid #323232;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: rgb(50, 33, 84);
+}
+.user-img{
+    top: 30%;
+    width: 400px;
+    display: flex;
+    right: 1%;
+    justify-content: center;
+    position: absolute;
+}
+.faq-questions summary{
+    font-size: 1.3em;
+    /* padding-bottom: 2px; */
+    padding-left: 30px;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: rgb(33, 12, 74);
+    cursor: pointer;
+}
+.faq-questions p{
+    color: #000000;
+    padding-left: 35px;
+    padding-bottom: 15px;
+}
+footer {
+    margin-top: 20%;
+    background-color: rgba(255,255,255,0.18);
+    padding: 15px;
+    text-align: center;
+}
+
